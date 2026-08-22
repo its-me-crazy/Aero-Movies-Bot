@@ -187,7 +187,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                        m=await message.reply_sticker("CAACAgQAAxkBAAEn9_ZmGp1uf1a38UrDhitnjOOqL1oG3gAC9hAAAlC74FPEm2DxqNeOmB4E") 
+                        m=await message.reply_sticker("CAACAgUAAxkBAAIQ32qJviaKgiT5yQ3h4SQNj7R5ebz7AAKSJAACnR9RVGNcSBVd4vE0PQQ") 
                         await asyncio.sleep(1)
                         await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -216,7 +216,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgQAAxkBAAEn9_ZmGp1uf1a38UrDhitnjOOqL1oG3gAC9hAAAlC74FPEm2DxqNeOmB4E") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAIQ32qJviaKgiT5yQ3h4SQNj7R5ebz7AAKSJAACnR9RVGNcSBVd4vE0PQQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -676,7 +676,7 @@ async def save_tutorial(client, message):
     try:
         tutorial = message.text.split(" ", 1)[1]
     except:
-        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_caption https://t.me/bisal_files</code>")    
+        return await message.reply_text("<b>Command Incomplete!!\n\nuse like this -</b>\n\n<code>/set_caption https://t.me/Mr_Mohammed_29</code>")    
     await save_group_settings(grp_id, 'tutorial', tutorial)
     await message.reply_text(f"<b>Successfully changed tutorial for {title} to</b>\n\n{tutorial}", disable_web_page_preview=True)
     
@@ -968,7 +968,7 @@ async def refer(bot, message):
         InlineKeyboardButton(f'⏳ {referdb.get_refer_points(message.from_user.id)}', callback_data='ref_point'),
         InlineKeyboardButton('Close', callback_data='close_data')
     ]]  
-    m=await message.reply_sticker("CAACAgQAAxkBAAEkt_Rl_7138tgHJdEsqSNzO5mPWioZDgACGRAAAudLcFGAbsHU3KNJUx4E")      
+    m=await message.reply_sticker("CAACAgUAAxkBAAIQ3GqJsiJiVQM9b-JUqATb0OyD7RNvAAKHJAACwtRoVXT6sOXwNv75PQQ")      
     await m.delete()
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
